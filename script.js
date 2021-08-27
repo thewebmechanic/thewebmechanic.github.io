@@ -3,11 +3,13 @@ myImage.src = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQABLAEsAAD/2wBDAAsICAoIBw
 
 
 
-ctx.drawImage(myImage, 0, 0, canvas.width, canvas.height);
+
 myImage.addEventListener('load', function(){
     const canvas = document.getElementById('canvas1');
     const ctx = canvas.getContext('2d');
     canvas.width = 1600;
     canvas.height = 1689;
+    
+    ctx.drawImage(myImage, 0, 0, canvas.width, canvas.height);
 });
 
